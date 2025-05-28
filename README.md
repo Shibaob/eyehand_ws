@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # eyehand_ws
 =======
 # hand_eye_calibration
@@ -21,4 +20,3 @@ rosrun camera_calibration cameracalibrator.py --size 7x6 --square 0.01 image:=/c
 roslaunch panda_description description.launch
 
 roslaunch grasp_demo start_server.launch 
->>>>>>> Initial commit
