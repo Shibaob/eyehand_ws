@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>	
+
+	<!--start server -->
+	<node pkg="vision_opencv" type="vision_opencv.py" name= "vision_opencv"/>
+	<node pkg="grasp_demo" type="cam_to_real.py" name= "CamtoReal"/>
+	<node pkg="grasp_demo" type="tf_broadcast.py" name= "tf_broadcast"/>
+	<node pkg="grasp_demo" type="tf_listener.py" name= "tf_listener"/>
+	<node pkg="grasp_demo" type="obj_grasp.py" name= "obj_grasp"   output="screen"/>
+
+</launch>
